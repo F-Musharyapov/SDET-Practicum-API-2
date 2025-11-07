@@ -22,7 +22,7 @@ import static org.hamcrest.core.IsEqual.equalTo;
  * Класс тестирования POST-запроса создания сущности
  */
 @Epic(value = "Тестирование API")
-@Feature(value = "Тестирование API пяти точек")
+@Feature(value = "Тестирование POST-запроса создания сущности")
 public class CreateEntityTest extends BaseTest {
 
     /**
@@ -30,7 +30,7 @@ public class CreateEntityTest extends BaseTest {
      */
     private CreateEntityResponse createEntityResponse;
 
-    @Story(value = "Тестирование POST-запроса создания сущности")
+    @Story(value = "Тестирование позитивного кейса на успешное создание сущности")
     @Test(description = "Тестовый метод для проверки создания сущности")
     public void createEntityTest() {
 

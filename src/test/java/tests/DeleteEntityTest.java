@@ -16,7 +16,7 @@ import static io.restassured.RestAssured.given;
  * Класс тестирования DELETE-запроса удаления сущности
  */
 @Epic(value = "Тестирование API")
-@Feature(value = "Тестирование API пяти точек")
+@Feature(value = "Тестирование DELETE-запроса удаления сущности")
 public class DeleteEntityTest extends BaseTest {
 
     /**
@@ -56,7 +56,7 @@ public class DeleteEntityTest extends BaseTest {
                 .build();
     }
 
-    @Story(value = "Тестирование DELETE-запроса удаления сущности")
+    @Story(value = "Тестирование позитивного кейса на успешное удаление сущности")
     @Test(description = "Тестовый метод для проверки удаления сущности")
     public void deleteEntityTest() {
         given()

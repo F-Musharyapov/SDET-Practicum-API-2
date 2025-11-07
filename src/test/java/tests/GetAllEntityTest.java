@@ -24,7 +24,7 @@ import static io.restassured.RestAssured.given;
  * Класс тестирования GET/ALL-запроса получения данных сущностей
  */
 @Epic(value = "Тестирование API")
-@Feature(value = "Тестирование API пяти точек")
+@Feature(value = "Тестирование GET-запроса получения списка сущностей")
 public class GetAllEntityTest extends BaseTest {
 
     /**
@@ -82,7 +82,7 @@ public class GetAllEntityTest extends BaseTest {
                 .build();
     }
 
-    @Story(value = "Тестирование GET-запроса получения списка сущностей")
+    @Story(value = "Тестирование позитивного кейса на успешное получение списка сущностей")
     @Test(description = "Тестовый метод для получения списка сущностей и проверки наличия в списке ранее созданных")
     public void getAllEntityTest() {
         Response response = given()

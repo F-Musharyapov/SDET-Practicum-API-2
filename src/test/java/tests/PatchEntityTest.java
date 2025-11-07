@@ -22,7 +22,7 @@ import static io.restassured.RestAssured.given;
  * Класс тестирования PATCH-запроса обновления сущности
  */
 @Epic(value = "Тестирование API")
-@Feature(value = "Тестирование API пяти точек")
+@Feature(value = "Тестирование PATCH-запроса изменения данных сущности")
 public class PatchEntityTest extends BaseTest {
 
     /**
@@ -72,7 +72,7 @@ public class PatchEntityTest extends BaseTest {
                 .build();
     }
 
-    @Story(value = "Тестирование PATCH-запроса изменения данных сущности")
+    @Story(value = "Тестирование позитивного кейса на успешное изменение сущности")
     @Test(description = "Тестовый метод для изменения данных объекта")
     public void patchEntityTest() {
 
